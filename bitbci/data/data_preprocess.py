@@ -26,6 +26,8 @@ def populate_NaN(dataframe):
 
 def populate_ids(dataframe):
     """ loop1. Замества ID=0 със съответното правилно """
+    
+    # dataframe = dataframe.astype({'EventId': 'int32'}).dtypes
     EventID_NEW = ''
     EventID_TO_SET = ''
     for index, row in dataframe.iterrows(): #итерираме ред по ред с вградения метод iterrows() от pandas
@@ -45,7 +47,7 @@ def filter_events(dataframe):
     Връща (generator) DataFrame съдържащ данни само за ляво и дясно
     """
     dataframe = dataframe[(dataframe.EventId == '33025') | (dataframe.EventId == '33026')]
-    return dataframe
+    return dataframe.astype({'EventId': 'int'})
 
 
 # def loop3(data):

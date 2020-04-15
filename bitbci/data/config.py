@@ -1,3 +1,4 @@
+
 config_dict = {
     'time_size' : 128, # row count for 1 sec
     'offset' : 0.75, # Отместване в секунди на началото на всяка епоха; ! Cqlo chislo ili gurmi
@@ -12,7 +13,7 @@ config_dict = {
     'channel_data' : ['Epoch', 'AF3', 'F7', 'F3', 'F5', 'T7', 'P7', 'O1', 'O2', 'P8', 'T8', 'FC6', 'F4', 'F8', 'AF4', 'EventId'],
     'input_file_url' : 'https://raw.githubusercontent.com/YYx00xZZ/at-UniBIT/master/data/input/1_GD_Standart_14ch_24.01.2020.csv',
     'input_file' : 'D:\\UniBIT-BCI-Study\\data\\input\\1_GD_Standart_14ch_24.01.2020.csv',
-    'path_write':'D:\\UniBIT-BCI-Study\\data\\output\\', # 'path_write' : 'D:\\UniBIT-BCI-Study\\data\\output',
+    'path_write':'D:\\bitBCI\\data\\', # 'path_write' : 'D:\\UniBIT-BCI-Study\\data\\output',
     'path_open_class': 'D:\\wondering-python\\BCI\\results\\index_sort_result.csv',
     'test_path' : 'Empty',
     'train_path' : 'Empty',
