@@ -19,16 +19,17 @@ def main():
     # зареждаме входния csv файл от Github
 
     data = prepare_data(df)
+    data.to_csv('tt.csv', sep=',')
     # dataframe който съдържа само ивенти left/right
 
-    fdata = filtering.butter_bandpass_filter(
-        data,
-        config['lowcut'],
-        config['highcut'],
-        config['fs'],
-        config['filter_order'])
+    # fdata = filtering.butter_bandpass_filter(
+    #     data,
+    #     config['lowcut'],
+    #     config['highcut'],
+    #     config['fs'],
+    #     config['filter_order'])
 
-    print(fdata)
+    # print(fdata)
 
 if __name__ == '__main__':
     main()
